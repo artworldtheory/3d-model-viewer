@@ -59,8 +59,8 @@ function init() {
         console.log('Model loaded successfully.');
         model = gltf.scene;
         model.position.set(0, 0, 0);
-        model.rotation.x += Math.PI / 1;
         model.scale.set(100, 100, 100); // Scale the model to half its previous size
+        model.rotation.x += Math.PI / 1;
         scene.add(model);
         controls.target.set(0, 0, 0); // Ensure the controls target the center of the model
         controls.update();
